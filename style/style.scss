@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 // variable for colors
 $mainPurple: #974973;
@@ -66,8 +66,61 @@ body {
     }
   }
   .aboutus {
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
+    .mycards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 40px;
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 40px 20px;
+        background-color: $mainPurple;
+        color: $fontColor;
+        height: 20em;
+        width: 33%;
+        .logo {
+          display: flex;
+          justify-content: center;
+          img {
+            height: 80%;
+            width: 80%;
+          }
+          .img0 {
+            display: block;
+          }
+          .img1 {
+            display: none;
+          }
+        }
+        .cdn {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      }
+      .card:hover {
+        background-color: $fontColor;
+        color: $mainPurple;
+        .logo {
+          .img0 {
+            display: none;
+          }
+          .img1 {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .correspond{
+    display: flex;
   }
 }
 
@@ -136,6 +189,14 @@ body {
       .cdn {
         top: 60vh;
         width: 70vw;
+      }
+    }
+    .aboutus {
+      .mycards {
+        flex-direction: column;
+        .card {
+          width: 100%;
+        }
       }
     }
   }
