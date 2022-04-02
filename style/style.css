@@ -7,6 +7,7 @@
 
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 body .header .logo {
@@ -21,6 +22,38 @@ body .header .logo {
           align-items: center;
 }
 
+body .header .navigation a {
+  color: #6C6C6C;
+}
+
+body .header .navigation a:hover {
+  color: #974973;
+}
+
+body .showcase img {
+  width: 100vw;
+  height: 100vh;
+}
+
+body .showcase .cdn {
+  text-align: center;
+  position: relative;
+  left: 50vw;
+  top: -45vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(151, 73, 115, 0.3);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  width: 50vw;
+  padding: 50px 20px;
+}
+
 /* ----------- Desktop and laptop Screens ----------- */
 @media only screen and (min-width: 1224px) {
   body .header .logo img {
@@ -33,6 +66,9 @@ body .header .logo {
   body .header .logo img {
     width: 60vw;
   }
+  body .showcase .cdn {
+    width: 50vw;
+  }
 }
 
 /* ----------- tablets and ipod screens ----------- */
@@ -40,12 +76,18 @@ body .header .logo {
   body .header .logo img {
     width: 80vw;
   }
+  body .showcase .cdn {
+    width: 60vw;
+  }
 }
 
 /* ----------- Smartphones screens ----------- */
 @media only screen and (max-width: 480px) {
   body .header .logo img {
     width: 100vw;
+  }
+  body .showcase .cdn {
+    width: 70vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,72 +1,119 @@
 // global config
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 // variable for colors
-$mainPurple : #974973;
+$mainPurple: #974973;
+$navColor:#6C6C6C;
+$fontColor: #ffffff;
 
-body{
-    width: 100vw;
-    .header{
-        .logo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  .header {
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+    .navigation {
+      a {
+        color: $navColor;
+      }
+      a:hover{
+          color: $mainPurple;
+      }
+    }
+  }
+  .showcase {
+    img {
+      width: 100vw;
+      height: 100vh;
+    }
+    .cdn {
+      text-align: center;
+      position: relative;
+      left: 50vw;
+      top: -45vh;
+      transform: translate(-50%, -50%);
+      background: rgba(151, 73, 115, 0.3);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(5.5px);
+      -webkit-backdrop-filter: blur(5.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: $fontColor;
+      width: 50vw;
+      padding: 50px 20px;
+    }
+  }
 }
 
 /* ----------- Desktop and laptop Screens ----------- */
-@media only screen  and (min-width : 1224px) {
-    body{
-        .header{
-            .logo{
-                img{
-                    width: 60vw;
-                }
-            }
+@media only screen and (min-width: 1224px) {
+  body {
+    .header {
+      .logo {
+        img {
+          width: 60vw;
         }
+      }
     }
+  }
 }
 
 /* ----------- small laptops screens ----------- */
-@media only screen and (max-device-width : 1024px) {
-    body{
-        .header{
-            .logo{
-                img{
-                    width: 60vw;
-                }
-            }
+@media only screen and (max-device-width: 1024px) {
+  body {
+    .header {
+      .logo {
+        img {
+          width: 60vw;
         }
+      }
     }
+    .showcase {
+      .cdn {
+        width: 50vw;
+      }
+    }
+  }
 }
 
 /* ----------- tablets and ipod screens ----------- */
-@media only screen and (max-device-width : 768px) {
-    body{
-        .header{
-            .logo{
-                img{
-                    width: 80vw;
-                }
-            }
+@media only screen and (max-device-width: 768px) {
+  body {
+    .header {
+      .logo {
+        img {
+          width: 80vw;
         }
+      }
     }
+    .showcase {
+      .cdn {
+        width: 60vw;
+      }
+    }
+  }
 }
 
 /* ----------- Smartphones screens ----------- */
-@media only screen and (max-width : 480px) {
-    body{
-        .header{
-            .logo{
-                img{
-                    width: 100vw;
-                }
-            }
+@media only screen and (max-width: 480px) {
+  body {
+    .header {
+      .logo {
+        img {
+          width: 100vw;
         }
+      }
     }
+    .showcase {
+      .cdn {
+        width: 70vw;
+      }
+    }
+  }
 }
-
