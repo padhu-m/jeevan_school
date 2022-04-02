@@ -1,0 +1,72 @@
+// global config
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// variable for colors
+$mainPurple : #974973;
+
+body{
+    width: 100vw;
+    .header{
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+/* ----------- Desktop and laptop Screens ----------- */
+@media only screen  and (min-width : 1224px) {
+    body{
+        .header{
+            .logo{
+                img{
+                    width: 60vw;
+                }
+            }
+        }
+    }
+}
+
+/* ----------- small laptops screens ----------- */
+@media only screen and (max-device-width : 1024px) {
+    body{
+        .header{
+            .logo{
+                img{
+                    width: 60vw;
+                }
+            }
+        }
+    }
+}
+
+/* ----------- tablets and ipod screens ----------- */
+@media only screen and (max-device-width : 768px) {
+    body{
+        .header{
+            .logo{
+                img{
+                    width: 80vw;
+                }
+            }
+        }
+    }
+}
+
+/* ----------- Smartphones screens ----------- */
+@media only screen and (max-width : 480px) {
+    body{
+        .header{
+            .logo{
+                img{
+                    width: 100vw;
+                }
+            }
+        }
+    }
+}
+
