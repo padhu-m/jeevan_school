@@ -93,7 +93,7 @@ body .aboutus .mycards {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 40px;
+  margin-left: 40px;
 }
 
 body .aboutus .mycards .card {
@@ -173,6 +173,39 @@ body .correspond {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .correspond .cdn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .correspond .cdn h3,
+body .correspond .cdn p {
+  text-align: center;
+  color: #6c6c6c;
+  width: 80%;
 }
 
 /* ----------- Desktop and laptop Screens ----------- */
