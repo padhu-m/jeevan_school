@@ -52,6 +52,10 @@ body .header .navigation a:hover {
   color: #974973;
 }
 
+body .showcase {
+  position: relative;
+}
+
 body .showcase img {
   width: 100vw;
   height: 100vh;
@@ -237,12 +241,28 @@ body .facility .mycards .card {
   body .header .logo img {
     width: 60vw;
   }
+  body .header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* ----------- small laptops screens ----------- */
 @media only screen and (max-device-width: 1024px) {
   body .header .logo img {
     width: 60vw;
+  }
+  body .header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .showcase .cdn {
     top: 50vh;
@@ -265,6 +285,15 @@ body .facility .mycards .card {
 @media only screen and (max-width: 480px) {
   body .header .logo img {
     width: 100vw;
+  }
+  body .header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body .showcase .cdn {
     top: 60vh;
