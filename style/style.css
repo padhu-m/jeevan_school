@@ -84,16 +84,15 @@ body .aboutus {
 }
 
 body .aboutus .mycards {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 40px;
 }
 
 body .aboutus .mycards .card {
@@ -115,6 +114,7 @@ body .aboutus .mycards .card {
   color: #ffffff;
   height: 20em;
   width: 33%;
+  border-radius: 2em;
 }
 
 body .aboutus .mycards .card .logo {
@@ -212,13 +212,13 @@ body .facility {
   height: 100vh;
 }
 
-body .facility .cards {
+body .facility .mycards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -226,6 +226,10 @@ body .facility .cards {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+body .facility .mycards .card {
+  margin: 10px;
 }
 
 /* ----------- Desktop and laptop Screens ----------- */
