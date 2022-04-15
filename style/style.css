@@ -27,7 +27,7 @@ body .title {
 }
 
 body .title h1 {
-  font-size: 3em;
+  font-size: xx-large;
   font-weight: 900;
   color: #974973;
 }
@@ -65,7 +65,7 @@ body .showcase .cdn {
   text-align: center;
   position: absolute;
   left: 50vw;
-  top: 70vh;
+  top: 50vh;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: rgba(151, 73, 115, 0.3);
@@ -174,6 +174,7 @@ body .aboutus .mycards .card:hover .logo .img1 {
 }
 
 body .correspond {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,6 +235,39 @@ body .facility .mycards {
 
 body .facility .mycards .card {
   margin: 10px;
+  width: 33%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .facility .mycards .card:hover {
+  color: #ffffff;
+  background-color: #974973;
+}
+
+body .facility .btm .view {
+  background-color: #974973;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .facility .btm .view a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body .facility .btm .view a p {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+body .facility .btm .view a .arrow {
+  font-size: x-large;
+  background-color: #C86098;
+  padding: 0 10px;
 }
 
 /* ----------- Desktop and laptop Screens ----------- */
@@ -283,6 +317,9 @@ body .facility .mycards .card {
 
 /* ----------- Smartphones screens ----------- */
 @media only screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
   body .header .logo img {
     width: 100vw;
   }
@@ -306,7 +343,16 @@ body .facility .mycards .card {
             flex-direction: column;
   }
   body .aboutus .mycards .card {
-    width: 100%;
+    width: 90%;
+  }
+  body .facility .mycards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .facility .mycards .card {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
