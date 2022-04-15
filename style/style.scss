@@ -141,7 +141,6 @@ body {
     }
   }
   .facility {
-    height: 100vh;
     .mycards {
       display: flex;
       justify-content: space-evenly;
@@ -172,11 +171,28 @@ body {
           }
           .arrow {
             font-size: x-large;
-            background-color: #C86098;
+            background-color: #c86098;
             padding: 0 10px;
           }
         }
       }
+    }
+  }
+  .extr {
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      color: $mainPurple;
+      width: 4em;
+    }
+    img {
+      height: 5em;
+      margin: 0 40px;
+    }
+    p {
+      margin: 10px;
+      padding: 0;
+      width: 15em;
     }
   }
 }
@@ -276,6 +292,9 @@ body {
           width: 90%;
         }
       }
+    }
+    .extr {
+      padding: 20px;
     }
   }
 }

@@ -213,10 +213,6 @@ body .correspond .cdn p {
   width: 80%;
 }
 
-body .facility {
-  height: 100vh;
-}
-
 body .facility .mycards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,8 +262,26 @@ body .facility .btm .view a p {
 
 body .facility .btm .view a .arrow {
   font-size: x-large;
-  background-color: #C86098;
+  background-color: #c86098;
   padding: 0 10px;
+}
+
+body .extr h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #974973;
+  width: 4em;
+}
+
+body .extr img {
+  height: 5em;
+  margin: 0 40px;
+}
+
+body .extr p {
+  margin: 10px;
+  padding: 0;
+  width: 15em;
 }
 
 /* ----------- Desktop and laptop Screens ----------- */
@@ -353,6 +367,9 @@ body .facility .btm .view a .arrow {
   }
   body .facility .mycards .card {
     width: 90%;
+  }
+  body .extr {
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
