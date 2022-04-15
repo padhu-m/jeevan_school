@@ -284,6 +284,15 @@ body .extr p {
   width: 15em;
 }
 
+body .gallery ul button {
+  color: #6c6c6c !important;
+}
+
+body .gallery ul .active {
+  background-color: #974973 !important;
+  color: #ffffff !important;
+}
+
 /* ----------- Desktop and laptop Screens ----------- */
 @media only screen and (min-width: 1224px) {
   body .header .logo img {

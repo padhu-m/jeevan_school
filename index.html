@@ -16,6 +16,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- custom css part -->
     <link rel="stylesheet" href="./style/style.css" />
     <title>Jeevan's International School</title>
@@ -283,7 +290,7 @@
           class="d-flex justify-content-center align-items-center flex-column"
         >
           <div
-            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm  my-5"
+            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm my-5"
           >
             <img src="./assets/images/manico.webp" alt="ico" />
             <p>
@@ -292,7 +299,7 @@
             </p>
           </div>
           <div
-            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm  my-5"
+            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm my-5"
           >
             <img src="./assets/images/cap.webp" alt="ico" />
             <p>
@@ -305,7 +312,7 @@
           class="d-flex justify-content-center align-items-center flex-column"
         >
           <div
-            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm  my-5"
+            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm my-5"
           >
             <img src="./assets/images/world.webp" alt="ico" />
             <p>
@@ -314,7 +321,7 @@
             </p>
           </div>
           <div
-            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm  my-5"
+            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm my-5"
           >
             <img src="./assets/images/roundgrp.webp" alt="ico" />
             <p>
@@ -335,13 +342,13 @@
           class="d-flex justify-content-center align-items-center flex-column"
         >
           <div
-            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm  my-5"
+            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm my-5"
           >
             <img src="./assets/images/grp.webp" alt="ico" />
             <p>Teamwork and co-operation.</p>
           </div>
           <div
-            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm  my-5"
+            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm my-5"
           >
             <img src="./assets/images/exam.webp" alt="ico" />
             <p>Periodic Self-assessment.</p>
@@ -351,13 +358,13 @@
           class="d-flex justify-content-center align-items-center flex-column"
         >
           <div
-            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm  my-5"
+            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm my-5"
           >
             <img src="./assets/images/clap.webp" alt="ico" />
             <p>Clear cut guidelines.</p>
           </div>
           <div
-            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm  my-5"
+            class="d-flex justify-content-center align-items-center flex-row m-2 m-3-sm my-5"
           >
             <img src="./assets/images/badge.webp" alt="ico" />
             <p>
@@ -369,7 +376,190 @@
         </div>
       </div>
     </div>
-    
+    <div class="gallery">
+      <div class="title">
+        <h1>Gallery</h1>
+      </div>
+      <div>
+        <ul
+          class="nav nav-pills mb-3 d-flex justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-all-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+              role="tab"
+              aria-controls="pills-all"
+              aria-selected="true"
+            >
+              All
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-premises-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-premises"
+              type="button"
+              role="tab"
+              aria-controls="pills-premises"
+              aria-selected="false"
+            >
+              Premises
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-environments-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-environments"
+              type="button"
+              role="tab"
+              aria-controls="pills-environments"
+              aria-selected="false"
+            >
+              Environment
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-facilities-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-facilities"
+              type="button"
+              role="tab"
+              aria-controls="pills-facilities"
+              aria-selected="false"
+            >
+              Facilities
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-arts-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-arts"
+              type="button"
+              role="tab"
+              aria-controls="pills-arts"
+              aria-selected="false"
+            >
+              Arts
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-kitchen-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-kitchen"
+              type="button"
+              role="tab"
+              aria-controls="pills-kitchen"
+              aria-selected="false"
+            >
+              Kitchen
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-sports-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-sports"
+              type="button"
+              role="tab"
+              aria-controls="pills-sports"
+              aria-selected="false"
+            >
+              Sports
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-all"
+            role="tabpanel"
+            aria-labelledby="pills-all-tab"
+          >
+            <div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-premises"
+            role="tabpanel"
+            aria-labelledby="pills-premises-tab"
+          >
+            <h1>2</h1>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-environments"
+            role="tabpanel"
+            aria-labelledby="pills-environments-tab"
+          >
+            <h1>3</h1>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-facilities"
+            role="tabpanel"
+            aria-labelledby="pills-facilities-tab"
+          >
+            <h1>4</h1>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-arts"
+            role="tabpanel"
+            aria-labelledby="pills-arts-tab"
+          >
+            <h1>5</h1>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-kitchen"
+            role="tabpanel"
+            aria-labelledby="pills-kitchen-tab"
+          >
+            <h1>6</h1>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-sports"
+            role="tabpanel"
+            aria-labelledby="pills-sports-tab"
+          >
+            <h1>7</h1>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./script/app.js"></script>
   </body>
 </html>

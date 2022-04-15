@@ -195,6 +195,17 @@ body {
       width: 15em;
     }
   }
+  .gallery {
+    ul {
+      button {
+        color: $navColor !important;
+      }
+      .active {
+        background-color: $mainPurple !important;
+        color: $fontColor !important;
+      }
+    }
+  }
 }
 
 /* ----------- Desktop and laptop Screens ----------- */
