@@ -179,7 +179,6 @@ body {
     }
   }
   .extr {
-    
     h1 {
       text-align: center;
       font-weight: 600;
@@ -188,10 +187,10 @@ body {
     }
     img {
       height: 5em;
-      margin: 0 40px;
+      margin: 0 20px;
     }
     p {
-      margin: 10px;
+      margin: 5px;
       padding: 0;
       width: 15em;
     }
@@ -307,7 +306,7 @@ body {
 /* ----------- Smartphones screens ----------- */
 @media only screen and (max-width: 480px) {
   body {
-    padding: 10px;
+    padding-right: 10px;
     .header {
       .logo {
         img {
@@ -341,6 +340,7 @@ body {
         }
       }
     }
+
     .footer {
       .logo {
         img {

@@ -275,11 +275,11 @@ body .extr h1 {
 
 body .extr img {
   height: 5em;
-  margin: 0 40px;
+  margin: 0 20px;
 }
 
 body .extr p {
-  margin: 10px;
+  margin: 5px;
   padding: 0;
   width: 15em;
 }
@@ -387,7 +387,7 @@ body .footer Button {
 /* ----------- Smartphones screens ----------- */
 @media only screen and (max-width: 480px) {
   body {
-    padding: 10px;
+    padding-right: 10px;
   }
   body .header .logo img {
     width: 100vw;
