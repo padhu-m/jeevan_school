@@ -218,7 +218,7 @@ body {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          text-shadow: 2px 2px #6c6c6c;
+          text-shadow: 2px 2px $navColor;
           color: $fontColor;
           transition: 0.8s;
         }
@@ -230,7 +230,8 @@ body {
         }
         h1 {
           transition: 0.8s;
-          color: #6c6c6c;
+          color: $mainPurple;
+          text-shadow: 2px 2px $fontColor;
         }
       }
     }
