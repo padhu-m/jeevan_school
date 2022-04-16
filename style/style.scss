@@ -179,6 +179,7 @@ body {
     }
   }
   .extr {
+    
     h1 {
       text-align: center;
       font-weight: 600;
@@ -204,6 +205,42 @@ body {
         background-color: $mainPurple !important;
         color: $fontColor !important;
       }
+    }
+    .mySwiper {
+      .imgsec {
+        position: relative;
+        img {
+          height: 50em;
+          filter: grayscale(100%);
+          transition: 0.5s;
+        }
+        h1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-shadow: 2px 2px #6c6c6c;
+          color: $fontColor;
+          transition: 0.8s;
+        }
+      }
+      .imgsec:hover {
+        img {
+          transition: 0.5s;
+          filter: none;
+        }
+        h1 {
+          transition: 0.8s;
+          color: #6c6c6c;
+        }
+      }
+    }
+  }
+  .footer {
+    background-color: #ffffff;
+    Button {
+      background-color: $mainPurple !important;
+      border: none !important;
     }
   }
 }
@@ -304,8 +341,12 @@ body {
         }
       }
     }
-    .extr {
-      padding: 20px;
+    .footer {
+      .logo {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
